@@ -1,0 +1,75 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$bgColor: #3b2316;
+$txtColorNav: #bba16a;
+$navColor: #d1c8a0;
+$searchColor: #bba16a;
+body{
+  background: {
+    color: $bgColor;
+    image: image-url('floral.png');
+    repeat: no-repeat;
+    position: top center;
+  }
+  text:{
+    align: center;
+    transform: uppercase;
+  }
+  color: #fff;
+  font-family: helvetica, sans-serif;
+  margin: 0px;
+}
+button{
+  border: 0;
+}
+li{
+  color: darken($txtColorNav, 10%);
+  display: inline;
+  padding: 10px;
+  position: relative;
+  font-size: 1.5em;
+  top: 10px;
+}
+main{
+  width: 100%;
+  height: 600px;
+}
+nav{
+  background: $navColor;
+  height: 40px;
+  margin: -20px 0 0 0;
+  width: 100%;
+  text-align: left;
+}
+form{
+  
+}
+ul{
+  list-style: none;
+}
+.bottom_text{
+  color: lighten($searchColor, 10%);
+  margin: 100px 0 0 0;
+ }
+.logo{
+  margin: 200px 0 0 0;
+ 
+}
+.search_box{
+  width: 400px/960px * 100%;
+  height: 40px;
+}
+.search_button{
+  border-radius: 30px;
+  background-color: $searchColor;
+  color: #fff;
+  font-size: 1.5em;
+  height: 30px;
+  width: 200px;
+  text-transform: uppercase;
+}
+.tagline{
+  font-size: 1.5em;
+  margin: 100px 0 0 0;
+}
